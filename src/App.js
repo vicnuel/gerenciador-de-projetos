@@ -1,43 +1,33 @@
-// antes do react router
-/* import HelloWorld from './components/helloworld';
-import Anotacoes from './components/Anotacoes';
-import SayMyName from './components/SayMyName';
-import './App.css'; */
-// depois do react router
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Estudo from './pages/Estudo'
-import Home from './pages/Home'
-import NavBar from './layout/NavBar'
+
+import Home from './components/pages/Home'
+import Contact from './components/pages/Contact'
+import Company from './components/pages/Company'
+import NewProject from './components/pages/NewProject'
+import NotFound from './components/pages/NotFound'
+import Projects from './components/pages/Projects'
+
+import NavBar from './components/layout/NavBar'
+import Container from './components/layout/Container'
+import Footer from './components/layout/Footer'
 
 function App() {
 
-  // const name = 'Victor'
-
-  // const url_image = 'https://via.placeholder.com/150'
-
-  /* return (
-      antes do react router
-      // <div className="App">
-      
-      
-      // <h1>Alterando JSX</h1>
-      // <p>Olá, {name}!</p>
-      // <img src={url_image} alt="teste" />
-      // <HelloWorld /> 
-      // <Anotacoes /> 
-      //  <SayMyName name={name} /> 
-      // </div>
-      )
-*/
-
   return (
-    /* depois do react router */
     <Router >
       <NavBar />
-      <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/estudo" element={<Estudo />} />
-      </Routes>
+      <Container customClass="min-height">
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/company" element={<Company />} />
+          <Route path="/newproject" element={<NewProject />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Container>
+      <Footer />
+
     </Router>
   )
 }
