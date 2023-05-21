@@ -6,6 +6,7 @@ import Company from './components/pages/Company'
 import NewProject from './components/pages/NewProject'
 import NotFound from './components/pages/NotFound'
 import Projects from './components/pages/Projects'
+import Project from './components/pages/Project'
 
 import NavBar from './components/layout/NavBar'
 import Container from './components/layout/Container'
@@ -24,6 +25,7 @@ function App() {
           <Route path="/company" element={<Company />} />
           <Route path="/newproject" element={<NewProject />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/project/:id" element={<Project />} />
         </Routes>
       </Container>
       <Footer />

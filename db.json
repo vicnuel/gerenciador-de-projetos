@@ -12,17 +12,6 @@
       "id": 1
     },
     {
-      "name": "SIte",
-      "budget": "1",
-      "category": {
-        "id": "2",
-        "name": "Dev"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
       "name": "Projeto",
       "budget": "2323",
       "category": {
@@ -34,7 +23,7 @@
       "id": 3
     },
     {
-      "name": "SIte",
+      "name": "Site",
       "budget": "55",
       "category": {
         "id": "2",
@@ -43,39 +32,6 @@
       "cost": 0,
       "services": [],
       "id": 5
-    },
-    {
-      "name": "teste",
-      "budget": "11",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 6
-    },
-    {
-      "name": "teste",
-      "budget": "11",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 7
-    },
-    {
-      "name": "teste",
-      "budget": "11",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 8
     },
     {
       "name": "Projeto",
@@ -87,28 +43,6 @@
       "cost": 0,
       "services": [],
       "id": 9
-    },
-    {
-      "name": "teste",
-      "budget": "555",
-      "category": {
-        "id": "3",
-        "name": "QA"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 10
-    },
-    {
-      "name": "teste 2",
-      "budget": "6969",
-      "category": {
-        "id": "5",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 11
     },
     {
       "name": "Site offline Spoken Text",
