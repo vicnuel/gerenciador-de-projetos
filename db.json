@@ -7,8 +7,15 @@
         "id": "4",
         "name": "PM"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 558,
+      "services": [
+        {
+          "name": "teste",
+          "cost": "558",
+          "description": "yuuy",
+          "id": "2a55000d-0378-4596-a911-8259f4618ca8"
+        }
+      ],
       "id": 1
     },
     {
@@ -50,6 +57,17 @@
       "category": {
         "id": "2",
         "name": "Dev"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 11
+    },
+    {
+      "name": "teste",
+      "budget": "55",
+      "category": {
+        "id": "5",
+        "name": "Design"
       },
       "cost": 0,
       "services": [],
