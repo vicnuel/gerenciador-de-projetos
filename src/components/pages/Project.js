@@ -51,7 +51,33 @@ function Project() {
         setShowServiceForm(!showServiceForm)
     }
 
-    function handleRemoveService(id) { }
+    function handleRemoveService(id, cost) {
+        const serviceUpdated = project.services.filter(service => service.id !== id)
+
+        const projectUpdated = project
+
+        projectUpdated.services = serviceUpdated
+        project.cost = parseFloat(project.cost) - parseFloat(cost)
+
+        fetch(`http://localhost:5001/projects/${projectUpdated.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(projectUpdated)
+        }).then(resp => resp.json())
+            .then(data => {
+                setProject(projectUpdated)
+                setServices(projectUpdated.services)
+                setMessage("Serviço removido com sucesso")
+                setType("success")
+                setTimeout(() => {
+                    setMessage()
+                    setType()
+                }, 3000)
+            })
+            .catch(err => console.log(err))
+    }
 
     function createService() {
         setMessage()

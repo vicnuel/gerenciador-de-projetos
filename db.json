@@ -70,38 +70,8 @@
         "id": "2",
         "name": "Dev"
       },
-      "cost": 50,
-      "services": [
-        {
-          "name": "teste",
-          "cost": "47",
-          "description": "dfdfdfs",
-          "id": "97ef88c9-d6f5-4127-915c-018af3636a0b"
-        },
-        {
-          "name": "serviço",
-          "cost": "0",
-          "description": "ewwe",
-          "id": "5f953334-a973-431d-b441-cc6c2c6e5f6f"
-        },
-        {
-          "name": "serviço",
-          "cost": "0",
-          "description": "ewwe",
-          "id": "5f953334-a973-431d-b441-cc6c2c6e5f6f"
-        },
-        {
-          "name": "wewe",
-          "cost": "2",
-          "id": "691fe8ff-b534-49b7-a1d1-a6ef36cc24b4"
-        },
-        {
-          "name": "2323",
-          "cost": "1",
-          "description": "yuuy",
-          "id": "4d20416a-abd6-495c-afcc-6070b44676fa"
-        }
-      ],
+      "cost": 0,
+      "services": [],
       "id": 11
     },
     {
